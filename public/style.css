@@ -1,0 +1,182 @@
+html,body{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background: #2c2f31;
+    color: white;
+    user-select: none;
+}
+
+.site-title{
+    display: flex;
+    width: 12%;
+    /*border: 2px solid black;*/
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+
+.sub-title{
+    margin-top: 1.7em;
+    font-weight: bold;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    margin-top: 1.5em;
+    cursor: pointer;
+}
+
+li{
+    margin-right: 2em;
+}
+
+main{
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.main-title{
+    margin-left: 0.5em;
+    margin-bottom: 0;
+}
+
+form{
+    margin: 2em 0;
+ }
+
+fieldset{
+    border: none;
+}
+
+#url{
+    margin-left: 10.5em;
+    width: 720px;
+    height: 30px;
+    padding-left: .75em;
+    font-size: 1.05rem;
+    color: #454545;
+}
+
+hr{
+    color: silver;
+}
+
+.label,
+.parameter-font{
+    color: #454545;
+}
+
+.form-p{
+    color: #454545;
+    display: inline-block;
+}
+
+.form-divs{
+    display: flex;
+}
+
+.radio-div{
+    margin-left: 6.8em;
+    margin-top: 0.5em;
+    user-select: none;
+}
+
+#JSON-type,#request-get,#request-post,#Custom-type{
+    cursor: pointer;
+}
+
+#json-textarea{
+    padding-left: .5em;
+    font-size: 1.05rem;
+    margin-top: 1em;
+    margin-left: 4em;
+    width: 720px;
+    height: 60px;
+    color: #454545;
+    resize: none;    /*        resize none of textarea. */
+}
+
+
+#submit-btn{
+    margin-top: 1em;
+    margin-left: 0.75em;
+    font-size: 1.1rem;
+    padding: 0.5em;
+    background: #00adee;
+    color: white;
+    border: none;
+    border-radius: 6px;
+}
+
+#submit-btn:hover{
+    color: lightskyblue;
+    background: white;
+    border: 2px solid #00adee;
+}
+
+#submit-btn:active{
+    transform: scale(1.1);
+}
+
+.parameter-1{
+    margin-left: 6.75em;
+    padding-left: .75em;
+    font-size: 1.05rem;
+    border-radius: 4px;
+    border: 2px solid #e8e8e8;
+    width: 300px;
+    height: 30px;
+}
+
+.parameter{
+    margin-left: 1em;
+    padding-left: .75em;
+    font-size: 1.05rem;
+    border-radius: 4px;
+    border: 2px solid #e8e8e8;
+    width: 300px;
+    height: 30px;
+}
+
+#add-btn,.sub-btn{
+    margin-left: 1em;
+    color: white;
+    background: #00adee;
+    padding: 0.7em 1.2em;
+    border: none;
+    border-radius: 4px;
+}
+#add-btn:hover,.sub-btn:hover{
+    background: deepskyblue;
+}
+
+#add-btn:active,.sub-btn:active{
+    transform: scale(1.1);
+}
+
+#parameter-field{
+    display: none;
+}
+
+.params-divs{
+    margin-bottom: 1em;
+}
+
+.response-div{
+    margin-top: 2em;
+}
+
+#response{
+    width: 720px;
+    font-size: 1.01rem;
+    padding: 0.5em;
+    margin-left: 9em;
+    height: 80px;
+    color: #454545;
+}
+

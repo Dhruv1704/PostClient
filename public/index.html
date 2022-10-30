@@ -1,0 +1,89 @@
+<!--https://postclient-17.web.app-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PostClient</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="container">
+
+    <header>
+        <div class="site-title">
+            <h2>PostClient</h2>
+            <p class="sub-title">Home</p>
+        </div>
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li class="nav-item">Mail</li>
+                <li class="nav-item">About</li>
+                <li class="nav-item">Contact US</li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <h1 class="main-title">Welcome to PostClient</h1>
+        <hr>
+        <form id="form">
+            <fieldset>
+                <label for="url" class="label">URL</label>
+                <input placeholder="Enter URL here" id="url" name="url" type="url" value="">
+            </fieldset>
+
+            <fieldset class="form-divs">
+                <p class="form-p">Request Type</p>
+                <div class="radio-div">
+                    <input id="request-get" name="request" type="radio" value="GET" checked>
+                    <label for="request-get" class="label">GET</label>
+                    <br>
+                    <input id="request-post" name="request" type="radio" value="POST">
+                    <label for="request-post" class="label">POST</label>
+                </div>
+            </fieldset>
+
+            <fieldset class="form-divs">
+                <p class="form-p">Content Type</p>
+                <div class="radio-div">
+                    <input id="JSON-type" name="Content" type="radio" value="JSON" checked>
+                    <label for="JSON-type" class="label">JSON</label>
+                    <br>
+                    <input id="Custom-type" name="Content" type="radio" value="Custom">
+                    <label for="Custom-type" class="label">Custom Parameters</label>
+                </div>
+            </fieldset>
+
+            <fieldset id="json-field">
+                <label for="json-textarea" class="label" id="textarea-label">Enter Request JSON</label>
+                <textarea id="json-textarea"></textarea>
+            </fieldset>
+
+            <fieldset id="parameter-field">
+                <div class="params-divs">
+                    <label for="parameter-1" class="parameter-font">Parameter 1</label>
+                    <input class="parameter-1" id="parameter-1" type="text" placeholder="Enter Parameter 1 Key">
+                    <input class="parameter" type="text" placeholder="Enter Parameter 1 Value" id="paramValue-1">
+                    <button type="button" id="add-btn">+</button>
+                </div>
+                <div id="parameter-div"></div>
+            </fieldset>
+
+            <button type="submit" id="submit-btn">Submit</button>
+        </form>
+        <hr>
+
+        <form>
+            <fieldset class="response-div">
+                <label for="response">Response</label>
+                <textarea id="response" placeholder="Your response will appear here" value=""></textarea>
+            </fieldset>
+        </form>
+
+
+    </main>
+    <script src="script.js" type="application/javascript"></script>
+</div>
+</body>
+</html>
